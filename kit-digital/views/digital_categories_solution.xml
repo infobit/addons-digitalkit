@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<openerp>
+  <data>
+        <record model="ir.actions.act_window" id="action_digital_categories_solution">
+                <field name="name">Digital categories solution</field>
+                <field name="res_model">digital.categories.solution</field>
+                <field name="view_type">form</field>
+                <field name="view_mode">tree,form</field>
+        </record>
+
+        <record model="ir.ui.view" id="view_digital_categories_solution_tree">
+                <field name="name">digital_categories_solution_tree</field>
+                <field name="model">digital.categories.solution</field>
+                <field name="type">tree</field>
+                <field name="arch" type="xml">
+                        <tree string="Digital categories solutions">
+                              <field name="name" readonly="True"/>
+                              <field name="maximum_amount" readonly="True"/>
+                              <field name="note" readonly="True"/>
+                              <field name="first_percentaje" readonly="True"/>
+                              <field name="second_percentaje" readonly="True"/>
+                        </tree>
+                </field>
+        </record>
+
+        <record model="ir.ui.view" id="view_digital_categories_solution_form">
+                <field name="name">digital_categories_solution_form</field>
+                <field name="model">digital.categories.solution</field>
+                <field name="type">form</field>
+                <field name="arch" type="xml">
+                        <form string="Digital category solution">
+                          <group>
+                              <field name="name" readonly="True"/>
+                              <field name="maximum_amount" readonly="True"/>
+                              <field name="note" readonly="True"/> 
+                              <field name="first_percentaje" readonly="True"/>
+                              <field name="second_percentaje" readonly="True"/>
+                          </group>
+                        </form>
+                </field>
+        </record>
+
+
+        <record model="ir.ui.view" id="view_digital_categories_solution_search">
+                <field name="name">digital_categories_solution_search</field>
+                <field name="model">digital.categories.solution</field>
+                <field name="arch" type="xml">
+                        <search string="Digital categories solutions">
+                              <field name="name"/>
+                              <field name="maximum_amount"/>
+                              <field name="first_percentaje"/>
+                              <field name="second_percentaje"/>
+                              <field name="note"/>
+                        </search>
+                </field>
+        </record>
+
+        <menuitem name="Categories solutions" id="menu_action_digital_categories_solution" parent="menu_action_digital_kit" action="action_digital_categories_solution"/>
+
+  </data>
+</openerp>

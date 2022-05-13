@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data noupdate="1">
+
+        <record id="beneficiary_segments_i" model="beneficiary.segments">
+            <field name="name">12000</field>
+            <field name="segment">Segmento I. Pequeñas empresas de entre 10 y menos de 50 empleados</field>
+        </record>
+        <record id="beneficiary_segments_ii" model="beneficiary.segments">
+            <field name="name">6000</field>
+            <field name="segment">Segmento II. Pequeñas empresas o Microempresas de entre 3 y menos de 10 empleados</field>
+        </record>
+        <record id="beneficiary_segments_iii" model="beneficiary.segments">
+            <field name="name">2000</field>
+            <field name="segment">Segmento III. Pequeñas empresas o Microempresas de entre 1 y menos de 3 empleados y personas en situación de autoempleo</field>
+        </record>
+
+    </data>
+</openerp>

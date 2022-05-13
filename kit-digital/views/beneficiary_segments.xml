@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<openerp>
+  <data>
+        <record model="ir.actions.act_window" id="action_beneficiary_segments">
+                <field name="name">Beneficiary segments</field>
+                <field name="res_model">beneficiary.segments</field>
+                <field name="view_type">form</field>
+                <field name="view_mode">tree,form</field>
+        </record>
+
+        <record model="ir.ui.view" id="view_beneficiary_segments_tree">
+                <field name="name">beneficiary_segments_tree</field>
+                <field name="model">beneficiary.segments</field>
+                <field name="type">tree</field>
+                <field name="arch" type="xml">
+                        <tree string="Beneficary segments">
+                              <field name="name"/>
+                              <field name="segment"/>
+                              <field name="note"/>
+                        </tree>
+                </field>
+        </record>
+
+        <record model="ir.ui.view" id="view_beneficiary_segments_form">
+                <field name="name">beneficiary_segments_form</field>
+                <field name="model">beneficiary.segments</field>
+                <field name="type">form</field>
+                <field name="arch" type="xml">
+                        <form string="Beneficiary segments">
+                          <group>
+                              <field name="name"/>
+                              <field name="segment"/>
+                              <field name="note"/> 
+                          </group>
+                        </form>
+                </field>
+        </record>
+
+
+        <record model="ir.ui.view" id="view_beneficiary_segments_search">
+                <field name="name">beneficiary_segments_search</field>
+                <field name="model">beneficiary.segments</field>
+                <field name="arch" type="xml">
+                        <search string="Beneficiary segments">
+                              <field name="name"/>
+                              <field name="segment"/>
+                              <field name="note"/>
+                        </search>
+                </field>
+        </record>
+
+        <menuitem name="Beneficiary segments" id="menu_action_beneficiary_segments" parent="menu_action_digital_kit" action="action_beneficiary_segments"/>
+
+  </data>
+</openerp>

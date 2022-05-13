@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<openerp>
+  <data>
+        <record model="ir.actions.act_window" id="action_partner_digital_categories_solution">
+                <field name="name">Partner digital categories solution</field>
+                <field name="res_model">partner.digital.categories.solution</field>
+                <field name="view_type">form</field>
+                <field name="view_mode">tree,form</field>
+        </record>
+
+        <record model="ir.ui.view" id="view_partner_digital_categories_solution_tree">
+                <field name="name">partner_digital_categories_solution_tree</field>
+                <field name="model">partner.digital.categories.solution</field>
+                <field name="type">tree</field>
+                <field name="arch" type="xml">
+                        <tree string="Partner digital categories solutions">
+                              <field name="name"/>
+                              <field name="maximum_amount"/>
+                              <field name="amount"/>
+                              <field name="order_partner_id"/>
+                              <field name="order_kit_id"/>
+                              <!--<field name="date_order_partner_id"/>
+                              <field name="date_order_kit_id"/>-->
+                              <field name="first_amount_paid"/>
+                              <field name="second_amount_paid"/>
+                              <field name="state"/>
+                              <field name="date_init"/>
+                              <field name="date_end"/>
+                              <field name="partner_id"/>
+                              <field name="note"/>
+                              <field name="documents_kit_ids"/>
+                        </tree>
+                </field>
+        </record>
+
+        <record model="ir.ui.view" id="view_partner_digital_categories_solution_form">
+                <field name="name">partner_digital_categories_solution_form</field>
+                <field name="model">partner.digital.categories.solution</field>
+                <field name="type">form</field>
+                <field name="arch" type="xml">
+                        <form string="Partner digital category solution">
+                          <group>
+                              <field name="name"/>
+                              <field name="maximum_amount"/>
+                              <field name="amount"/>
+                              <field name="order_partner_id"/>
+                              <field name="order_kit_id"/>
+                              <!--<field name="date_order_partner_id"/>
+                              <field name="date_order_kit_id"/>-->
+                              <field name="first_amount_paid"/>
+                              <field name="second_amount_paid"/>
+                              <field name="state"/>
+                              <field name="date_init"/>
+                              <field name="date_end"/>
+                              <field name="partner_id"/>
+                              <field name="note"/>
+                              <field name="documents_kit_ids"/>
+                          </group>
+                        </form>
+                </field>
+        </record>
+
+
+        <record model="ir.ui.view" id="view_partner_digital_categories_solution_search">
+                <field name="name">partner_digital_categories_solution_search</field>
+                <field name="model">partner.digital.categories.solution</field>
+                <field name="arch" type="xml">
+                        <search string="Partner digital categories solutions">
+                              <field name="name"/>
+                              <field name="maximum_amount"/>
+                              <field name="amount"/>
+                              <field name="order_partner_id"/>
+                              <field name="order_kit_id"/>
+                              <!--<field name="date_order_partner_id"/>
+                              <field name="date_order_kit_id"/>-->
+                              <field name="first_amount_paid"/>
+                              <field name="second_amount_paid"/>
+                              <field name="state"/>
+                              <field name="date_init"/>
+                              <field name="date_end"/>
+                              <field name="partner_id"/>
+                              <field name="note"/>
+                              <field name="documents_kit_ids"/>
+                              <group expand="0" string="Group By ...">
+                                <filter string="Partner" icon="terp-folder-orange" context="{'group_by':'partner_id'}"/>
+                                <filter string="Date init" icon="terp-folder-orange" context="{'group_by':'date_init'}"/>
+                                <filter string="Date end" icon="terp-folder-orange" context="{'group_by':'date_end'}"/>
+                                <filter string="State" icon="terp-folder-orange" context="{'group_by':'state'}"/>
+                                <filter string="Digital category" icon="terp-folder-orange" context="{'group_by':'name'}"/>
+                                <filter string="Order partner" icon="terp-folder-orange" context="{'group_by':'order_partner_id'}"/>
+                                <filter string="Order Kit" icon="terp-folder-orange" context="{'group_by':'order_kit_id'}"/>
+                              </group>
+                        </search>
+                </field>
+        </record>
+
+        <menuitem name="Partner Categories solutions" id="menu_action_partner_digital_categories_solution" parent="menu_action_digital_kit" action="action_partner_digital_categories_solution"/>
+
+  </data>
+</openerp>

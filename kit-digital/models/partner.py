@@ -1,0 +1,17 @@
+# -*- encoding: utf-8 -*-
+##############################################################################
+from datetime import datetime, timedelta
+import time
+from openerp import fields, models, api
+from openerp.tools.translate import _
+from openerp.tools import DEFAULT_SERVER_DATE_FORMAT, DEFAULT_SERVER_DATETIME_FORMAT
+import openerp.addons.decimal_precision as dp
+
+class partner(models.Model):
+    _inherit = 'res.partner'
+
+    #contract = fields.
+    grant_awarded = fields.Char('Grand Awarded')
+    categ_kit_ids = fields.One2many('partner.digital.categories.solution', 'partner_id', 'Categories of digital solutions')
+    documents_kit_ids = fields.One2many('partner.documents.digital.kit', 'partner_id', 'Digital kit documents')
+    beneficiary_segment = fields.Many2one('beneficiary.segments', 'Segment - Bonus amount')

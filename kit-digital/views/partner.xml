@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+<data>
+        <record id="act_res_partner_kit_digital" model="ir.actions.act_window">
+            <field name="name">Partners with Kit digital</field>
+            <field name="res_model">res.partner</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="domain">[('beneficiary_segment','!=', False)]</field>
+        </record>
+   
+        <menuitem name="Partners with Kit digital" id="menu_action_partner_with_digital_kit" parent="menu_action_digital_kit" action="act_res_partner_kit_digital"/>
+
+        <record id="res_partner_view_kit_digital" model="ir.ui.view">
+            <field name="name">res.partner.view.kit.digital</field>
+            <field name="model">res.partner</field>
+            <field name="inherit_id" ref="base.view_partner_form" />
+            <field name="priority" eval="20"/>
+            <field name="arch" type="xml">
+                <xpath expr="//notebook" position="inside">
+                   <page string="Digital kit">
+                      <group>
+                       <field name="beneficiary_segment"/>
+                       <field name="grant_awarded"/>
+                       <field name="categ_kit_ids">
+                          <tree>
+                              <field name="name"/>
+                              <field name="maximum_amount"/>
+                              <field name="amount"/>
+                              <field name="order_partner_id"/>
+                              <field name="order_kit_id"/>
+                              <!--<field name="date_order_partner_id"/>
+                              <field name="date_order_kit_id"/>-->
+                              <field name="first_amount_paid"/>
+                              <field name="second_amount_paid"/>
+                              <field name="state"/>
+                              <field name="date_init"/>
+                              <field name="date_end"/>
+                              <field name="partner_id" invisible="1"/>
+                              <field name="note"/>
+                              <field name="documents_kit_ids"/>
+                          </tree>
+                          <form>
+                             <group>
+                              <field name="name"/>
+                              <field name="maximum_amount"/>
+                              <field name="amount"/>
+                              <field name="order_partner_id"/>
+                              <field name="order_kit_id"/>
+                              <!--<field name="date_order_partner_id"/>
+                              <field name="date_order_kit_id"/>-->
+                              <field name="first_amount_paid"/>
+                              <field name="second_amount_paid"/>
+                              <field name="state"/>
+                              <field name="date_init"/>
+                              <field name="date_end"/>
+                              <field name="partner_id" invisible="1"/>
+                              <field name="note"/>
+                              <field name="documents_kit_ids">
+                                 <tree readonly="True">
+                                    <field name="name"/>
+                                    <field name="url_document" widget="url"/>
+                                    <field name="type"/>
+                                    <field name="categ_solution_id" invisible="1"/>
+                                    <field name="partner_id" invisible="1" domain="[('partner_id', '=', parent.partner_id.id)]"/>
+                                    <field name="note"/>
+                                 </tree>
+                              </field>
+                             </group>
+                          </form>
+                       </field>
+                       <field name="documents_kit_ids">
+                          <tree editable="top">
+                              <field name="name"/>
+                              <field name="url_document" widget="url"/>
+                              <field name="type"/>
+                              <field name="partner_id" invisible="1"/>
+                              <field name="categ_solution_id"/>
+                              <field name="note"/>                             
+                          </tree>
+                          <form>
+                             <group>
+                              <field name="name"/>
+                              <field name="url_document" widget="url"/>
+                              <field name="type"/>
+                              <field name="partner_id" invisible="1"/>
+                              <field name="categ_solution_id"/>
+                              <field name="note"/>
+                             </group>
+                          </form>
+                       </field>
+                      </group> 
+                   </page>
+                </xpath>
+            </field>
+        </record>
+
+</data>
+</openerp>

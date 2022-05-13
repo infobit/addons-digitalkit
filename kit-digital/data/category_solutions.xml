@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data noupdate="1">
+
+        <record id="digital_categories_solution_web" model="digital.categories.solution">
+            <field name="maximum_amount">2000</field>
+            <field name="name">Sitio Web y Presencia en Internet</field>
+            <field name="first_percentaje">70</field>
+            <field name="second_percentaje">30</field>
+            <field name="note">Importe máximo de la ayuda  0 - 3 empleados: 2.000€ 3 - 9 empleados: 2.000€ 10 - 50 empleados: 2.000€
+  El principal objetivo de esta categoría es que puedas tener una página web para darte visibilidad en internet.
+Funcionalidades y servicios
+Dominio: la solución incluye el dominio de tu web durante un plazo mínimo de doce meses. La titularidad del dominio será tuya por completo.
+Hosting: también tendrás a tu disposición el alojamiento de la página web durante un plazo mínimo de doce meses. 
+Diseño de la página web: como parte del servicio tendrás la estructura de la web, con un mínimo de 3 apartados. Se consideran páginas o apartados de una web, elementos tales como: página de inicio (Landing Page), presentación de la empresa, formulario de contacto, descripción de productos, datos de contacto, mapa del sitio (sitemap), etc.
+Web responsive: tu web se adaptará perfectamente a cualquier tipo de dispositivo. 
+Accesibilidad: el diseño de tu web cumplirá con los criterios de conformidad de nivel AA de las Pautas WCAG-2.1. 
+Posicionamiento básico en internet:  la información de tu pyme será indexable por los principales motores de búsqueda (On-Page).
+Autogestionable: dispondrás también de una plataforma de gestión de contenidos para que puedas modificar los contenidos de tu web sin necesidad de ayuda.
+Optimización de la presencia en buscadores (SEO básico): Análisis de palabras clave, SEO On-Page de 2 páginas o apartados, indexación y jerarquización del contenido.</field>
+        </record>
+        <record id="digital_categories_solution_comercioe" model="digital.categories.solution">
+            <field name="maximum_amount">2000</field>
+            <field name="name">Comercio electrónico</field>
+            <field name="first_percentaje">70</field>
+            <field name="second_percentaje">30</field>
+            <field name="note">Importe máximo de la ayuda  0 - 3 empleados: 2.000€ 3 - 9 empleados: 2.000€ 10 - 50 empleados: 2.000€
+El principal objetivo de la categoría es crear tu página web de compraventa de productos y/o servicios que utilice medios digitales para su intercambio. Además de dar visibilidad a tu marca, dispondrás de un e-commerce o tienda online.
+Funcionalidades y servicios
+Creación de la tienda online o E-Commerce y alta del catálogo de productos: tendrás a tu disposición un catálogo en tu tienda online, en el que estarán disponibles tus productos, mediante su alta, importación o carga. La solución incluye la carga de al menos 100 referencias de tus productos, salvo que no dispongas de este número, en cuyo caso podrá ser menor.
+Métodos de pago: el Agente Digitalizador que hayas seleccionado configurará e integrará los métodos de pago en tu tienda online.
+Diseño Responsive: tu E-Commerce se podrá utilizar en todo tipo de dispositivos. 
+Accesibilidad: el diseño de tu tienda online cumplirá con los criterios de conformidad de nivel AA de las Pautas WCAG-2.1. 
+Posicionamiento básico en internet: tu tienda online será indexable por los principales motores de búsqueda (On-Page).
+Autogestionable: contarás también con una plataforma de gestión de contenidos para que puedas modificar los contenidos de tu web sin necesidad de ayuda.
+Formas de envío: tendrás configurados e integrados los métodos de envío digital y físico de los productos de tu tienda online.</field>
+        </record>
+        <record id="digital_categories_solution_redes" model="digital.categories.solution">
+            <field name="maximum_amount">2500</field>
+            <field name="name">Gestión de redes sociales</field>
+            <field name="first_percentaje">40</field>
+            <field name="second_percentaje">60</field>
+            <field name="note">Importe máximo de la ayuda  0 - 3 empleados: 2.000€ 3 - 9 empleados: 2.500€ 10 - 50 empleados: 2.500€
+El principal objetivo de esta categoría es promocionar tu empresa en redes sociales.
+Funcionalidades y servicios
+Social Media Plan: contarás con una estrategia de redes sociales alineada con tu misión y visión, para que sea relevante y conecte con tus potenciales clientes y fidelice a aquellos usuarios que ya lo sean.
+Monitorización de redes sociales: tendrás monitorizados y controlados de manera periódica los impactos de las acciones en redes sociales para ver tus resultados y saber si estás cumpliendo con los objetivos de tu estrategia.
+Optimización de la red/Auditoría Social Media: te ayudará a optimizar el rendimiento, analizando diferentes canales sociales.
+Gestión de una red social: el Agente Digitalizador que hayas seleccionado para proporcionarte la solución te administrará el perfil/usuario en, al menos, una red social.
+Publicación de posts semanales: el Agente Digitalizador publicará un mínimo de 4-8 entradas (posts) mensuales en tus redes sociales.</field>
+        </record>
+        <record id="digital_categories_solution_crm" model="digital.categories.solution">
+            <field name="maximum_amount">4000</field>
+            <field name="name">Gestión de clientes</field>
+            <field name="first_percentaje">70</field>
+            <field name="second_percentaje">30</field>
+            <field name="note">Importe máximo de la ayuda  0 - 3 empleados: 2.000€ (incluye 1 usuario) 3 - 9 empleados: 2.000€ (incluye 1 usuario) 10 - 50 empleados: 4.000€ (incluye 3 usuarios)
+Funcionalidades y servicios
+Gestión de clientes: serás capaz de almacenar y consultar los datos de cada uno de tus clientes, desde su alta como oportunidad de negocio, y simular la compra de productos o contratación de servicios.
+Gestión de Clientes potenciales (Leads): podrás dar de alta nuevos Leads de forma manual o mediante una importación por fichero. Los datos asociados a los Leads te permitirán su gestión comercial con el objetivo de convertirlos en clientes. Adicionalmente podrás parametrizar reglas de negocio para la asignación de Leads según diferentes criterios.
+Gestión de oportunidades: tendrás la posibilidad de gestionar todas las oportunidades de negocio que conlleven el envío al cliente potencial o Lead de ofertas y presupuestos. Además, podrás comprobar el estado de cada oportunidad (en análisis, oferta presentada, en negociación, ganadas, canceladas, etc.). 
+Acciones o tareas comerciales:  la herramienta implantada por el Agente Digitalizador de tu elección te permitirá crear acciones y tareas comerciales, tanto de forma manual como automática.
+Reporting, planificación y seguimiento comercial: podrás realizar seguimiento mediante indicadores (KPI´s), listado de oportunidades, y otros, con diferentes niveles de agregación de información en función de tus necesidades. Podrás también generar informes para el seguimiento y monitorización de tu actividad comercial, contemplando ratios de eficiencia, estado de fases, pipeline y otros atributos medibles (como productos, cotizaciones, etc.), y según los canales, perfiles, roles y/o fases comerciales. Estos informes podrán mostrar, al menos, datos mensuales, acumulados y/o comparativos entre diferentes ejercicios comerciales.
+Alertas: serás capaz de visualizar Alertas de Clientes en formato gráfico de diferente tipología (iconos, mensajes emergentes, etc.).
+Gestión documental: la solución incluirá un software para la gestión centralizada de la documentación capaz de insertar y/o vincular documentos tanto relativos a tu actividad comercial, como los que proporcionados por los propios clientes.
+Diseño Responsive:  tendrás una interfaz funcional en todo tipo de dispositivos.
+Integración con diversas plataformas: dispondrás de APIs o Web Services para la consolidación de la información y datos de toda tu empresa.</field>
+        </record>
+        <record id="digital_categories_solution_redes" model="digital.categories.solution">
+            <field name="maximum_amount">4000</field>
+            <field name="name">Business Intelligence y Analítica</field>
+            <field name="first_percentaje">70</field>
+            <field name="second_percentaje">30</field>
+            <field name="note">Importe máximo de la ayuda  0 - 3 empleados: 1.500€ 3 - 9 empleados: 2.000€ 10 - 50 empleados: 4.000€
+El objetivo de esta categoría es posibilitarte la explotación de datos de tu empresa para la mejora del proceso de toma de decisiones.
+Funcionalidades y servicios
+Integración de datos con otras bases de datos: tendrás acceso a otras bases de datos y a la realización de comparaciones con los datos expuestos.
+Almacenamiento de datos: dispondrás de una capacidad de almacenamiento como mínimo de 1 GB por usuario.
+Creación de paneles de datos estructurados y visuales: contarás con paneles de datos personalizados con datos relevantes y distintas formas de visualización.
+Exportación de datos: podrás exportar datos a imágenes o a documentos de Excel, creando sinergias y compatibilidades con distintos programas que utilices comúnmente.</field>
+        </record>
+        <record id="digital_categories_solution_facte" model="digital.categories.solution">
+            <field name="maximum_amount">1000</field>
+            <field name="name">Factura electrónica</field>
+            <field name="first_percentaje">70</field>
+            <field name="second_percentaje">30</field>
+            <field name="note">Importe máximo de la ayuda  0 - 3 empleados: 500€ (hasta 1 usuario) 3 - 9 empleados: 1.000€ (hasta 3 usuarios) 10 - 50 empleados: 1.000€ (hasta 3 usuarios)
+Con esta solución podrás tener digitalizado el flujo de emisión de las facturas a tus clientes.
+Funcionalidades y servicios
+Facturas en formato estructurado: tendrás la posibilidad emitir facturas en formatos estructurados, al menos en formato FACTURA-E, para facilitar su tratamiento automatizado.
+Facturas ilimitadas: podrás emitir un número ilimitado de facturas.
+Clientes ilimitados: tendrás la capacidad de enviar facturas a un número ilimitado de clientes.
+Productos o servicios ilimitados: podrás crear un número ilimitado de productos y/o servicios facturables dentro del catálogo.
+Envío de facturas por correo electrónico: la solución implantada por el Agente Digitalizador de tu elección te posibilitará enviar facturas directamente por correo electrónico.
+Personalización de facturas: las facturas serán personalizables, incluyendo la selección de tu logotipo.
+Copia de seguridad periódicas: podrás realizar copias de seguridad, con posibilidad de una periodicidad diaria.
+1GB Almacenamiento/Histórico de facturas: tendrás un almacenamiento de, al menos, 1GB para las facturas.
+Integración con otras soluciones: la solución deberá disponer de APIs o Web Services para su integración con otras herramientas, así como permitir la carga de datos de manera manual.
+Control de vencimiento de las facturas: tendrás un sistema de control del vencimiento de las facturas.
+Cumplimiento: podrás asegurar el cumplimiento de la normativa aplicable, en concreto el Reglamento por el que se regulan las obligaciones de facturación del Real Decreto 1619/2012, así como cualquier normativa de aplicación .</field>
+        </record>
+        <record id="digital_categories_solution_servherofv" model="digital.categories.solution">
+            <field name="maximum_amount">12000</field>
+            <field name="name">Servicios y herramientas de Oficina Virtual</field>
+            <field name="first_percentaje">70</field>
+            <field name="second_percentaje">30</field>
+            <field name="note">Importe máximo de la ayuda  0 - 3 empleados: 250€/usuario (hasta 2 usuarios) 3 - 9 empleados: 250€/usuario (hasta 9 usuarios) 10 - 50 empleados: 250€/usuario (hasta 48 usuarios)
+El principal objetivo de esta categoría es implantar en tu empresa soluciones interactivas y funcionales que permitan la colaboración más eficiente entre tus trabadores.
+Funcionalidades y servicios
+Colaboración en equipos de trabajo: tendrás asistencia por parte del proveedor en el proceso creativo de ideación o gestión de equipos para la gestión colaborativa de proyectos, compartir recursos y/o conocimientos, dotar de herramientas para la interacción de los equipos en los procesos de ideación o resolución de problemas, así como la configuración y personalización de flujos de trabajo, tareas, etc.
+Almacenar y compartir archivos: dispondrás de 1 TB de almacenamiento.
+Compatibilidad con dispositivos móviles. Tu solución será compatible con dispositivos móviles.
+Calendario y agenda: te permitirá organizar un calendario y tus tareas previstas.</field>
+        </record>
+        <record id="digital_categories_solution_gestproc" model="digital.categories.solution">
+            <field name="maximum_amount">6000</field>
+            <field name="name">Gestión de procesos</field>
+            <field name="first_percentaje">70</field>
+            <field name="second_percentaje">30</field>
+            <field name="note">Importe máximo de la ayuda  0 - 3 empleados: 500€ (hasta 1 usuario) 3 - 9 empleados: 2000€ (hasta 3 usuarios) 10 - 50 empleados: 6000€ (hasta 10 usuarios)
+El principal objetivo de esta categoría es digitalizar y/o automatizar procesos de tu negocio, relacionados con los aspectos operativos o productivos.
+Funcionalidades y servicios
+Digitalización y/o automatización de procesos y flujos de trabajo: tendrás digitalizados y/o automatizados procesos como:
+Contabilidad/finanzas: cuentas por cobrar/por pagar, gestión de activos y generación de cierres y balances, etc.
+Facturación: automatización de los procesos de facturación con la generación de presupuestos, albaranes y facturas.
+Proyectos: control de presupuestos, costes, estimaciones, optimización de los recursos, etc.
+Inventario: previsión, niveles de stock, envíos, distribuciones, devoluciones y cancelaciones, etc.
+Compras y pagos: gestión de pedidos de compra y proveedores.
+Recursos humanos: gestión de los recursos humanos, nóminas, etc.
+Logística: gestión de flotas y rutas, entre otras.
+Integración con diversas plataformas: la solución dispondrá de APIs o Web Services para su integración con otras herramientas.
+Actualizable: accederás a actualizaciones de la solución con nuevas versiones.
+Escalable: si tu empresa crece o cambia estructuralmente, la solución se adaptará a estos cambios.
+Cumplimiento: podrás asegurar el cumplimiento de la normativa aplicable, en concreto del Reglamento por el que se regulan las obligaciones de facturación del Real Decreto 1619/2012, así como cualquier normativa de aplicación.</field>
+        </record>
+        <record id="digital_categories_solution_comseguras" model="digital.categories.solution">
+            <field name="maximum_amount">6000</field>
+            <field name="name">Comunicaciones seguras</field>
+            <field name="first_percentaje">70</field>
+            <field name="second_percentaje">30</field>
+            <field name="note">Importe máximo de la ayuda  0 - 3 empleados: 125€/usuario (hasta 2 usuario) 3 - 9 empleados: 125€/usuario (hasta 3 usuarios) 10 - 50 empleados: 125€/usuario (hasta 48 usuarios)
+Con esta solución dispondrás de seguridad en las conexiones entre los dispositivos de tus empleados y la empresa.
+Funcionalidades y servicios
+SSL: dispondrás de un protocolo de capa de sockets seguros, para crear una conexión segura y cifrada.
+Cifrado de extremo a extremo: tendrás las comunicaciones cifradas en todo su recorrido, con el objetivo de prevenir ataques.
+Logs de conexión: serás capaz de mantener un registro de los dispositivos que se han conectado a tu red privada.
+Control de acceso: tendrás la posibilidad de permitir la conexión a tu red privada única y exclusivamente a los dispositivos autorizados por ti.
+Dispositivos móviles: podrás hacer uso de esta solución desde dispositivos móviles.
+Configuración inicial y actualizaciones de seguridad: dispondrás de una configuración inicial para que puedas usarlo correctamente, con las respectivas actualizaciones de firmas de malware y otros datos para detección de amenazas además de las actualizaciones de software de seguridad periódicas requeridas.</field>
+        </record>
+        <record id="digital_categories_solution_ciberseg" model="digital.categories.solution">
+            <field name="maximum_amount">6000</field>
+            <field name="name">Ciberseguridad</field>
+            <field name="first_percentaje">70</field>
+            <field name="second_percentaje">30</field>
+            <field name="note">Importe máximo de la ayuda  0 - 3 empleados: 125€/dispositivo (hasta 2 dispositivos) 3 - 9 empleados: 125€/dispositivo (hasta 9 dispositivos) 10 - 50 empleados: 125€/dispositivo (hasta 48 dispositivos)
+Funcionalidades y servicios
+Antimalware: tendrás a tu disposición una herramienta que analice tu dispositivo, su memoria interna y los dispositivos de almacenamiento externos.
+Antispyware: dispondrás de una herramienta que detecte y evite el malware espía.
+Correo seguro: tendrás herramientas de análisis del correo electrónico con las siguientes características:
+Antispam, con detección y filtro de correo no deseado.
+Antiphishing, con detección de correos con enlaces o malware que se sospecha sirvan para robar credenciales.
+Navegación segura: tendrás asegurado:
+Control de contenidos.
+Antiadware para evitar anuncios maliciosos.
+Análisis y detección de amenazas: serás capaz de conocer el comportamiento de las amenazas conocidas y nuevas.
+Monitorización de la red: tendrás herramientas que analizan el tráfico de red y te alerten de amenazas.
+Configuración inicial y actualizaciones de seguridad: dispondrás de una configuración inicial para su correcto uso, con las respectivas actualizaciones de firmas de malware y otros datos para detección de amenazas además de las actualizaciones de software de seguridad periódicas requeridas.
+Requisitos especiales de formación: dispondrás de formación para la configuración del software de seguridad, y tendrás un kit de concienciación en ciberseguridad para complementar la solución con habilidades de firewall humano.</field>
+        </record>
+    </data>
+</openerp>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<openerp>
+  <data>
+        <record model="ir.actions.act_window" id="action_type_document_digital_kit">
+                <field name="name">Type document digital</field>
+                <field name="res_model">type.document.digital.kit</field>
+                <field name="view_type">form</field>
+                <field name="view_mode">tree,form</field>
+        </record>
+
+        <record model="ir.ui.view" id="view_type_document_digital_kit_tree">
+                <field name="name">type_document_digital_kit_tree</field>
+                <field name="model">type.document.digital.kit</field>
+                <field name="type">tree</field>
+                <field name="arch" type="xml">
+                        <tree string="Type document digital kit">
+                              <field name="name"/>
+                              <field name="note"/>
+                        </tree>
+                </field>
+        </record>
+
+        <record model="ir.ui.view" id="view_type_document_digital_kit_form">
+                <field name="name">type_document_digital_kit_form</field>
+                <field name="model">type.document.digital.kit</field>
+                <field name="type">form</field>
+                <field name="arch" type="xml">
+                        <form string="Type document digital kit">
+                          <group>
+                              <field name="name"/>
+                              <field name="note"/> 
+                          </group>
+                        </form>
+                </field>
+        </record>
+
+
+        <record model="ir.ui.view" id="view_type_document_digital_kit_search">
+                <field name="name">type_document_digital_kit_search</field>
+                <field name="model">type.document.digital.kit</field>
+                <field name="arch" type="xml">
+                        <search string="Type document digital kit">
+                              <field name="name"/>
+                              <field name="note"/>
+                        </search>
+                </field>
+        </record>
+
+        <menuitem name="Type document digital kit" id="menu_action_type_document_digital_kit" parent="menu_action_digital_kit" action="action_type_document_digital_kit"/>
+
+  </data>
+</openerp>
