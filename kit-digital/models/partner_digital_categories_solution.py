@@ -17,6 +17,8 @@ class partner_digital_categories_solution(models.Model):
       amount = fields.Float("Amount")
       order_partner_id = fields.Many2one("sale.order", "Sale order Partner")
       order_kit_id = fields.Many2one("sale.order", "Sale order kit")
+      date_validation_kit = fields.Date("Date validation kit")
+      date_end_validation_kit = fields.Date("Date end validation kit")
       #date_order_partner_id = fields.Datetime(related="order_partner_id.date_order", string="Date of presentation Partner")
       #date_order_kit_id = fields.Datetime(related="order_kit_id.date_order", string="Date of presentation kit")
       first_amount_paid = fields.Float("First amount paid")
@@ -26,5 +28,5 @@ class partner_digital_categories_solution(models.Model):
       date_end = fields.Date("Date end")
       note = fields.Text("Note")
       partner_id = fields.Many2one("res.partner", "Digital partner")
-      documents_kit_ids = fields.One2many("partner.documents.digital.kit", "categ_solution_id", "Digital kit documents")
+      documents_kit_ids = fields.One2many("partner.documents.digital.kit", "categ_solution_id", "Digital kit documents", readonly=True)
 # vim:expandtab:smartindent:tabstop=4:softtabstop=4:shiftwidth=4:

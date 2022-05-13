@@ -19,6 +19,8 @@
                               <field name="amount"/>
                               <field name="order_partner_id"/>
                               <field name="order_kit_id"/>
+                              <field name="date_validation_kit"/>
+                              <field name="date_end_validation_kit"/>
                               <!--<field name="date_order_partner_id"/>
                               <field name="date_order_kit_id"/>-->
                               <field name="first_amount_paid"/>
@@ -47,6 +49,8 @@
                               <field name="order_kit_id"/>
                               <!--<field name="date_order_partner_id"/>
                               <field name="date_order_kit_id"/>-->
+                              <field name="date_validation_kit"/>
+                              <field name="date_end_validation_kit"/>
                               <field name="first_amount_paid"/>
                               <field name="second_amount_paid"/>
                               <field name="state"/>
@@ -85,6 +89,8 @@
                                 <filter string="Partner" icon="terp-folder-orange" context="{'group_by':'partner_id'}"/>
                                 <filter string="Date init" icon="terp-folder-orange" context="{'group_by':'date_init'}"/>
                                 <filter string="Date end" icon="terp-folder-orange" context="{'group_by':'date_end'}"/>
+                                <filter string="Date validation kit" icon="terp-folder-orange" context="{'group_by':'date_validation_kit'}"/>
+                                <filter string="Date end validation kit" icon="terp-folder-orange" context="{'group_by':'date_end_validation_kit'}"/>
                                 <filter string="State" icon="terp-folder-orange" context="{'group_by':'state'}"/>
                                 <filter string="Digital category" icon="terp-folder-orange" context="{'group_by':'name'}"/>
                                 <filter string="Order partner" icon="terp-folder-orange" context="{'group_by':'order_partner_id'}"/>
