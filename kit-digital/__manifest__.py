@@ -15,6 +15,8 @@ Developed for Infobit informática s.l.
 	"init_xml" : [],
 	"demo_xml" : [],
 	"data" : [
+                'security/kit_security.xml',
+                'security/ir.model.access.csv',
                 'views/state_categ_sol_digital_kit.xml',
                 'views/type_document_digital_kit.xml',
                 'views/beneficiary_segments.xml',

@@ -1,0 +1,8 @@
+"id","name","model_id:id","group_id:id","perm_read","perm_write","perm_create","perm_unlink"
+"beneficiary_segments","kit-digital.beneficiary_segments","kit-digital.model_beneficiary_segments","kit-digital.group_kitdigital",1,1,1,1
+"digital_categories_solution","kit-digital.digital_categories_solution","kit-digital.model_digital_categories_solution","kit-digital.group_kitdigital",1,1,1,1
+"partner_digital_categories_solution","kit-digital.partner_digital_categories_solution","kit-digital.model_partner_digital_categories_solution","kit-digital.group_kitdigital",1,1,1,1
+"partner_documents_digital_kit","kit-digital.partner_documents_digital_kit","kit-digital.model_partner_documents_digital_kit","kit-digital.group_kitdigital",1,1,1,1
+"state_categ_sol_digital_kit","kit-digital.state_categ_sol_digital_kit","kit-digital.model_state_categ_sol_digital_kit","kit-digital.group_kitdigital",1,1,1,1
+"type_document_digital_kit","kit-digital.type_document_digital_kit","kit-digital.model_type_document_digital_kit","kit-digital.group_kitdigital",1,1,1,1
+
