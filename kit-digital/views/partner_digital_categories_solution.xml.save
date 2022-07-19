@@ -14,10 +14,6 @@
                 <field name="type">tree</field>
                 <field name="arch" type="xml">
                         <tree string="Partner digital categories solutions">
-                              <field name="partner_id"/>
-                              <field name="beneficiary_segment"/>
-                              <field name="grant_awarded"/>
-                              <field name="state_grant_awarded"/>
                               <field name="name"/>
                               <field name="maximum_amount"/>
                               <field name="amount"/>
@@ -30,8 +26,9 @@
                               <field name="first_amount_paid"/>
                               <field name="second_amount_paid"/>
                               <field name="state"/>
-                              <!--<field name="date_init"/>
-                              <field name="date_end"/>-->
+                              <field name="date_init"/>
+                              <field name="date_end"/>
+                              <field name="partner_id"/>
                               <field name="note"/>
                               <field name="documents_kit_ids"/>
                         </tree>
@@ -45,14 +42,9 @@
                 <field name="arch" type="xml">
                         <form string="Partner digital category solution">
                           <group>
-                              <field name="partner_id"/>
-                              <field name="beneficiary_segment"/>
                               <field name="name"/>
-                              <field name="grant_awarded"/>
-                              <field name="state_grant_awarded"/>
                               <field name="maximum_amount"/>
                               <field name="amount"/>
-                              <field name="url_solution"/>
                               <field name="order_partner_id"/>
                               <field name="order_kit_id"/>
                               <!--<field name="date_order_partner_id"/>
@@ -62,8 +54,9 @@
                               <field name="first_amount_paid"/>
                               <field name="second_amount_paid"/>
                               <field name="state"/>
-                              <!--<field name="date_init"/>
-                              <field name="date_end"/>-->
+                              <field name="date_init"/>
+                              <field name="date_end"/>
+                              <field name="partner_id"/>
                               <field name="note"/>
                               <field name="documents_kit_ids"/>
                           </group>
@@ -77,8 +70,6 @@
                 <field name="model">partner.digital.categories.solution</field>
                 <field name="arch" type="xml">
                         <search string="Partner digital categories solutions">
-                              <field name="grant_awarded"/>
-                              <field name="state_grant_awarded"/>
                               <field name="name"/>
                               <field name="maximum_amount"/>
                               <field name="amount"/>
@@ -96,21 +87,20 @@
                               <field name="documents_kit_ids"/>
                               <group expand="0" string="Group By ...">
                                 <filter string="Partner" icon="terp-folder-orange" context="{'group_by':'partner_id'}"/>
-                                <!--<filter string="Date init" icon="terp-folder-orange" context="{'group_by':'date_init'}"/>
-                                <filter string="Date end" icon="terp-folder-orange" context="{'group_by':'date_end'}"/>-->
+                                <filter string="Date init" icon="terp-folder-orange" context="{'group_by':'date_init'}"/>
+                                <filter string="Date end" icon="terp-folder-orange" context="{'group_by':'date_end'}"/>
                                 <filter string="Date validation kit" icon="terp-folder-orange" context="{'group_by':'date_validation_kit'}"/>
                                 <filter string="Date end validation kit" icon="terp-folder-orange" context="{'group_by':'date_end_validation_kit'}"/>
                                 <filter string="State" icon="terp-folder-orange" context="{'group_by':'state'}"/>
                                 <filter string="Digital category" icon="terp-folder-orange" context="{'group_by':'name'}"/>
                                 <filter string="Order partner" icon="terp-folder-orange" context="{'group_by':'order_partner_id'}"/>
                                 <filter string="Order Kit" icon="terp-folder-orange" context="{'group_by':'order_kit_id'}"/>
-                                <filter string="Estado acuerdo" icon="terp-folder-orange" context="{'group_by':'state_grant_awarded'}"/>
                               </group>
                         </search>
                 </field>
         </record>
 
-        <menuitem name="Empresas por Categoria de solución" id="menu_action_partner_digital_categories_solution" parent="menu_action_digital_kit" action="action_partner_digital_categories_solution"/>
+        <menuitem name="Partner Categories solutions" id="menu_action_partner_digital_categories_solution" parent="menu_action_digital_kit" action="action_partner_digital_categories_solution"/>
 
   </data>
 </openerp>

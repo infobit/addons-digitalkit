@@ -29,4 +29,16 @@ class partner_digital_categories_solution(models.Model):
       note = fields.Text("Note")
       partner_id = fields.Many2one("res.partner", "Digital partner")
       documents_kit_ids = fields.One2many("partner.documents.digital.kit", "categ_solution_id", "Digital kit documents", readonly=True)
+      grant_awarded = fields.Char('Num.Acuerdo')
+      state_grant_awarded = fields.Selection([('borrado_dig', 'Borrador DIG'), ('pend_env_pyme', 'Pend.Envío PYME'), ('pend_pyme', 'Pend.Aceptación PYME'), ('pend_firm_dig', ' Pend.Firma Dig.'), ('pend_enviar_valid', 'Pend.Enviar a validación'), ('firm_pend_val', 'Firmado pend.Validación'), ('validado', 'Validado')], default="borrado_dig", string="Estado Acuerdo")
+      beneficiary_segment = fields.Many2one("beneficiary.segments", related="partner_id.beneficiary_segment", string="Segmento")
+      url_solution = fields.Char("Url solucion")
+
+      @api.onchange("date_validation_kit")
+      def calc_date_end(self):
+        for s in self:
+            if s.date_validation_kit:
+               #raise Warning(timedelta(days=180))
+               s.date_end_validation_kit = datetime.strptime(s.date_validation_kit,'%Y-%m-%d') + timedelta(days=90)
+
 # vim:expandtab:smartindent:tabstop=4:softtabstop=4:shiftwidth=4:

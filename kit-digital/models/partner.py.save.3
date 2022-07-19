@@ -10,18 +10,12 @@ import openerp.addons.decimal_precision as dp
 class partner(models.Model):
     _inherit = 'res.partner'
 
+    #contract = fields.
     grant_awarded = fields.Char('Grand Awarded')
     categ_kit_ids = fields.One2many('partner.digital.categories.solution', 'partner_id', 'Categories of digital solutions')
     documents_kit_ids = fields.One2many('partner.documents.digital.kit', 'partner_id', 'Digital kit documents')
     beneficiary_segment = fields.Many2one('beneficiary.segments', 'Segment - Bonus amount')
-    state_kit = fields.Selection([('pendiente', '[Paso 1] Pendiente de solicitar kit'), ('solicitado', '[Paso 2] Kit Solicitado'), ('aceptado', '[Paso 3] Kit Aceptado'), ('en_curso', '[Paso 4] Trabajos iniciados'), ('finalizado', '[Paso 5] Trabajos Finalizados')], string="Estado")
-    acept_date = fields.Date("Fecha Aceptación")
-    date_end = fields.Date("Fecha Fin")
-    internal_note_kit = fields.Text("Notas internas")
+    #state = fields.Selection(selection=[('solicitado', 'Solicitado'), ('aceptado', 'Aceptado'), ('en_curso', 'En curso'), ('finalizado', 'Finalizado')], "Estado")
+    #acept_date = fields.Date("Fecha Aceptación")
+    #date_end = fields.Date("Fecha Fin")
 
-    @api.onchange("acept_date")
-    def calc_date_end(self):
-        for s in self:
-            if s.acept_date:
-               #raise Warning(timedelta(days=180))
-               s.date_end = datetime.strptime(s.acept_date,'%Y-%m-%d') + timedelta(days=180)

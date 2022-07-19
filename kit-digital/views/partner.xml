@@ -1,15 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <openerp>
 <data>
+        <record id="res_partner_tree_with_view_kit_digital" model="ir.ui.view">
+            <field name="name">res.partner.tree.view.with.kit.digital</field>
+            <field name="model">res.partner</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+               <tree string="Empresas con kit digital">
+                    <field name="name"/>
+                    <field name="beneficiary_segment"/>
+                    <field name="state_kit"/>
+                    <field name="acept_date"/>
+                    <field name="date_end"/>
+               </tree>
+            </field>
+        </record>
+
         <record id="act_res_partner_kit_digital" model="ir.actions.act_window">
             <field name="name">Partners with Kit digital</field>
             <field name="res_model">res.partner</field>
             <field name="view_type">form</field>
             <field name="view_mode">tree,form</field>
+            <field name="view_id" ref="res_partner_tree_with_view_kit_digital"/>
             <field name="domain">[('beneficiary_segment','!=', False)]</field>
         </record>
    
         <menuitem name="Partners with Kit digital" id="menu_action_partner_with_digital_kit" parent="menu_action_digital_kit" action="act_res_partner_kit_digital"/>
+
 
         <record id="res_partner_view_kit_digital" model="ir.ui.view">
             <field name="name">res.partner.view.kit.digital</field>
@@ -21,10 +38,15 @@
                    <page string="Digital kit">
                       <group>
                        <field name="beneficiary_segment"/>
-                       <field name="grant_awarded"/>
+                       <!--<field name="grant_awarded" string="Expediente"/>-->
+                       <field name="state_kit"/>
+                       <field name="acept_date"/>
+                       <field name="date_end"/>
                        <field name="categ_kit_ids">
                           <tree>
                               <field name="name"/>
+                              <field name="grant_awarded"/>
+                              <field name="state_grant_awarded"/>
                               <field name="maximum_amount"/>
                               <field name="amount"/>
                               <field name="order_partner_id"/>
@@ -34,8 +56,8 @@
                               <field name="first_amount_paid"/>
                               <field name="second_amount_paid"/>
                               <field name="state"/>
-                              <field name="date_init"/>
-                              <field name="date_end"/>
+                              <field name="date_validation_kit"/>
+                              <field name="date_end_validation_kit"/>
                               <field name="partner_id" invisible="1"/>
                               <field name="note"/>
                               <field name="documents_kit_ids"/>
@@ -43,6 +65,8 @@
                           <form>
                              <group>
                               <field name="name"/>
+                              <field name="grant_awarded"/>
+                              <field name="state_grant_awarded"/>
                               <field name="maximum_amount"/>
                               <field name="amount"/>
                               <field name="order_partner_id"/>
@@ -52,8 +76,8 @@
                               <field name="first_amount_paid"/>
                               <field name="second_amount_paid"/>
                               <field name="state"/>
-                              <field name="date_init"/>
-                              <field name="date_end"/>
+                              <field name="date_validation_kit"/>
+                              <field name="date_end_validation_kit"/>
                               <field name="partner_id" invisible="1"/>
                               <field name="note"/>
                               <field name="documents_kit_ids">
@@ -90,8 +114,30 @@
                           </form>
                        </field>
                       </group> 
+                      <group>
+                         <field name="internal_note_kit"/>
+                      </group>
                    </page>
                 </xpath>
+            </field>
+        </record>
+
+        <record id="res_partner_view_filter_kit_digital" model="ir.ui.view">
+            <field name="name">res.partner.view.filter.kit.digital</field>
+            <field name="model">res.partner</field>
+            <field name="inherit_id" ref="base.view_res_partner_filter" />
+            <field name="priority" eval="20"/>
+            <field name="arch" type="xml">
+                <field name="name" position="after">
+                 <field name="acept_date"/>
+                 <field name="date_end"/>
+                 <field name="state_kit"/>
+                </field>
+                <filter name="salesperson" position="after">
+                   <filter name="acept_date" string="Fecha Aceptación" context="{'group_by': 'acept_date'}"/>
+                   <filter name="date_end" string="Fecha Finalización" context="{'group_by': 'date_end'}"/>
+                   <filter name="Estado" string="Estado" context="{'group_by': 'state_kit'}"/>
+                </filter>
             </field>
         </record>
 
