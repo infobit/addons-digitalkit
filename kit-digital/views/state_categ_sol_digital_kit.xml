@@ -50,8 +50,8 @@
         <menuitem id="menu_action_digital_kit" 
          name="Digital kit" 
          parent="sale.sale_menu_root"/>
-
+        <menuitem id="menu_kd" name="KD" web_icon="ib_software_control,static/description/kitdigital-logo.png"/>
         <menuitem name="state digital categories solutions" id="menu_action_state_digital_categories_solutions" parent="menu_action_digital_kit" action="action_state_categ_sol_digital_kit"/>
-
+        <menuitem name="Estados Categorias Sol." id="menu_action_state_digital_categories_solutionsp" parent="kit-digital.menu_kd" action="action_state_categ_sol_digital_kit"/>
   </data>
 </openerp>

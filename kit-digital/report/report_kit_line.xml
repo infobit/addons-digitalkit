@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+ <data>
+  <template id="report_kit_line">
+   <t t-call="web.basic_layout">
+      <h3>Resumen trabajos Kit Digital</h3>
+      <h4>Cliente: <span t-field="docs[0].partner_id.name"/> - Fecha: <span t-esc="datetime.datetime.now().strftime('%d-%m-%Y')"></span></h4>
+      <table class="table table-condensed"> <!--style="border:1px solid #dddddd;border-collapse:collapse;">-->
+        <tr style="font-size:11px;">
+           <td style="witdh:1cm">Fecha</td>
+           <td style="witdh:2cm">Asunto</td>
+           <td style="witdh:8cm">Descripción</td>
+           <td class="text-right" style="witdh:1cm">Cantidad</td>
+           <td class="text-right" style="witdh:1cm">Importe</td>
+        </tr>
+        <t t-set="totalqty" t-value="0"/>
+        <t t-set="totalamount" t-value="0"/>
+        <t t-foreach="docs" t-as="a">
+         <tr t-if="not a.internal"> <!-- style="font-size:9px;border:1px solid #dddddd;border-collapse:collapse;">-->
+	     <td><span t-field="a.date" t-field-options='{"format":"d/MM/y"}'/></td>
+	     <td><span t-field="a.name"/></td>
+             <td><span t-field="a.description"/></td>
+             <td class="text-right"><span t-field="a.qty_invoice"/></td>
+             <td class="text-right"><span t-field="a.amount"/></td>
+             <t t-set="totalamount" t-value="totalamount + a.amount"/>
+             <t t-set="totalqty" t-value="totalqty + a.qty_invoice"/>
+	 </tr>
+        </t>
+        <tr>
+          <td/>
+          <td/>
+          <td style="font-size:14px;"><strong>Total cantidad</strong></td>
+          <td/>
+          <td class="text-right" style="font-size:14px;"><strong t-esc="totalqty"/></td>
+        </tr>
+        <tr>
+          <td/>
+          <td/>
+          <td style="font-size:14px;"><strong>Total importe</strong></td>
+          <td/>
+          <td class="text-right" style="font-size:14px;"><strong t-esc="totalamount"/></td>
+        </tr>
+      </table>
+   </t>
+  </template>
+ </data>
+</openerp>
