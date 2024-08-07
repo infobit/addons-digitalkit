@@ -30,8 +30,9 @@
                               <field name="first_amount_paid"/>
                               <field name="second_amount_paid"/>
                               <field name="state"/>
-                              <!--<field name="date_init"/>
-                              <field name="date_end"/>-->
+                              <field name="state_justify"/>
+                              <field name="date_inijustify"/>
+                              <field name="date_endjustify"/>
                               <field name="note"/>
                               <field name="documents_kit_ids"/>
                         </tree>
@@ -62,6 +63,9 @@
                               <field name="first_amount_paid"/>
                               <field name="second_amount_paid"/>
                               <field name="state"/>
+                              <field name="state_justify"/>
+                              <field name="date_inijustify"/>
+                              <field name="date_endjustify"/>
                               <!--<field name="date_init"/>
                               <field name="date_end"/>-->
                               <field name="note"/>
@@ -91,6 +95,9 @@
                               <field name="state"/>
                               <field name="date_init"/>
                               <field name="date_end"/>
+                              <field name="state_justify"/>
+                              <field name="date_inijustify"/>
+                              <field name="date_endjustify"/>
                               <field name="partner_id"/>
                               <field name="note"/>
                               <field name="documents_kit_ids"/>

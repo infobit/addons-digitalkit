@@ -33,6 +33,10 @@ class partner_digital_categories_solution(models.Model):
       state_grant_awarded = fields.Selection([('borrado_dig', 'Borrador DIG'), ('pend_env_pyme', 'Pend.Envío PYME'), ('pend_pyme', 'Pend.Aceptación PYME'), ('pend_firm_dig', ' Pend.Firma Dig.'), ('pend_enviar_valid', 'Pend.Enviar a validación'), ('firm_pend_val', 'Firmado pend.Validación'), ('validado', 'Validado')], default="borrado_dig", string="Estado Acuerdo")
       beneficiary_segment = fields.Many2one("beneficiary.segments", related="partner_id.beneficiary_segment", string="Segmento")
       url_solution = fields.Char("Url solucion")
+      state_justify = fields.Selection([('borrador', 'Borrador'), ('pend_conf_bef', 'Pend.Conformidad Beneficiario'), ('pend_correc_dig', 'Pend.Correción DIG'), ('pend_presentar', ' Pend.Presentar'), ('presentada', 'Presentada'), ('validada', 'Validada'), ('en_subsanacion', 'En subsanación'), ('no_subsanada', 'No subsanada'), ('subsanacion_incorrecta', 'Subsanación incorrecta')], string="Estado Justificación")
+      date_inijustify = fields.Date("Date ini. justificación")
+      date_endjustify = fields.Date("Date fin  justificación")
+
 
       @api.onchange("date_validation_kit")
       def calc_date_end(self):
@@ -40,5 +44,13 @@ class partner_digital_categories_solution(models.Model):
             if s.date_validation_kit:
                #raise Warning(timedelta(days=180))
                s.date_end_validation_kit = datetime.strptime(s.date_validation_kit,'%Y-%m-%d') + timedelta(days=90)
+      
+      @api.onchange("date_inijustify")
+      def calc_date_endj(self):
+        for s in self:
+            if s.date_inijustify:
+               #raise Warning(timedelta(days=180))
+               s.date_endjustify = datetime.strptime(s.date_inijustify,'%Y-%m-%d') + timedelta(days=90)
+
 
 # vim:expandtab:smartindent:tabstop=4:softtabstop=4:shiftwidth=4:

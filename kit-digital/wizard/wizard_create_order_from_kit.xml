@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+    <data>
+        <record id="view_creacion_menus_kit" model="ir.ui.view">
+            <field name="name">Creacion pedidos</field>
+            <field name="model">wizard.create.order.from.kit</field>
+            <field name="arch" type="xml">
+                <form string="Create orders">
+                    <footer>
+                        <button name="create_order" string="_Apply" type="object" class="oe_highlight"/>
+                        or
+                        <button string="_Cancel" class="oe_link" special="cancel" />
+                    </footer>
+                </form>
+            </field>
+        </record>
+
+        <act_window name="Crear pedidos"
+          res_model="wizard.create.order.from.kit"
+          src_model="kit.line"
+          view_mode="tree"
+          target="new"
+          key2="client_action_multi"
+          id="create_order_from_kit_act_window"/>
+
+    </data>
+</openerp>

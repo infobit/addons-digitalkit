@@ -59,6 +59,9 @@
                               <field name="date_validation_kit"/>
                               <field name="date_end_validation_kit"/>
                               <field name="partner_id" invisible="1"/>
+                              <field name="state_justify"/>
+                              <field name="date_inijustify"/>
+                              <field name="date_endjustify"/>
                               <field name="note"/>
                               <field name="documents_kit_ids"/>
                           </tree>
@@ -79,6 +82,9 @@
                               <field name="date_validation_kit"/>
                               <field name="date_end_validation_kit"/>
                               <field name="partner_id" invisible="1"/>
+                              <field name="state_justify"/>
+                              <field name="date_inijustify"/>
+                              <field name="date_endjustify"/>
                               <field name="note"/>
                               <field name="documents_kit_ids">
                                  <tree readonly="True">

@@ -24,6 +24,7 @@ Developed for Infobit informática s.l.
                 'views/partner_digital_categories_solution.xml',
                 'views/partner_documents_digital_kit.xml',
                 'views/partner.xml',
+                'wizard/wizard_create_order_from_kit.xml',
                 'data/category_solutions.xml',
                 'data/segments.xml',
 	],
