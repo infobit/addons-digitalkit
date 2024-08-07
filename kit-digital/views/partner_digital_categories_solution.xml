@@ -14,6 +14,7 @@
                 <field name="type">tree</field>
                 <field name="arch" type="xml">
                         <tree string="Partner digital categories solutions">
+                              <field name="code_bono"/>
                               <field name="partner_id"/>
                               <field name="beneficiary_segment"/>
                               <field name="grant_awarded"/>
@@ -33,6 +34,9 @@
                               <field name="state_justify"/>
                               <field name="date_inijustify"/>
                               <field name="date_endjustify"/>
+                              <field name="state_justify2"/>
+                              <field name="date_inijustify2"/>
+                              <field name="date_endjustify2"/>
                               <field name="note"/>
                               <field name="documents_kit_ids"/>
                         </tree>
@@ -46,6 +50,7 @@
                 <field name="arch" type="xml">
                         <form string="Partner digital category solution">
                           <group>
+                              <field name="code_bono"/>
                               <field name="partner_id"/>
                               <field name="beneficiary_segment"/>
                               <field name="name"/>
@@ -66,6 +71,9 @@
                               <field name="state_justify"/>
                               <field name="date_inijustify"/>
                               <field name="date_endjustify"/>
+                              <field name="state_justify2"/>
+                              <field name="date_inijustify2"/>
+                              <field name="date_endjustify2"/>
                               <!--<field name="date_init"/>
                               <field name="date_end"/>-->
                               <field name="note"/>
@@ -81,6 +89,7 @@
                 <field name="model">partner.digital.categories.solution</field>
                 <field name="arch" type="xml">
                         <search string="Partner digital categories solutions">
+                              <field name="code_bono"/>
                               <field name="grant_awarded"/>
                               <field name="state_grant_awarded"/>
                               <field name="name"/>
@@ -98,6 +107,9 @@
                               <field name="state_justify"/>
                               <field name="date_inijustify"/>
                               <field name="date_endjustify"/>
+                              <field name="state_justify2"/>
+                              <field name="date_inijustify2"/>
+                              <field name="date_endjustify2"/>
                               <field name="partner_id"/>
                               <field name="note"/>
                               <field name="documents_kit_ids"/>
@@ -112,12 +124,14 @@
                                 <filter string="Order partner" icon="terp-folder-orange" context="{'group_by':'order_partner_id'}"/>
                                 <filter string="Order Kit" icon="terp-folder-orange" context="{'group_by':'order_kit_id'}"/>
                                 <filter string="Estado acuerdo" icon="terp-folder-orange" context="{'group_by':'state_grant_awarded'}"/>
+                                <filter string="Codigo Bono-Cobro" icon="terp-folder-orange" context="{'group_by':'code_bono'}"/>
                               </group>
                         </search>
                 </field>
         </record>
 
         <menuitem name="Empresas por Categoria de solución" id="menu_action_partner_digital_categories_solution" parent="menu_action_digital_kit" action="action_partner_digital_categories_solution"/>
+        <menuitem name="Empresas por Categoria de solución" id="menu_action_partner_digital_categories_solutionp" parent="kit-digital.menu_kd" action="action_partner_digital_categories_solution"/>
 
   </data>
 </openerp>

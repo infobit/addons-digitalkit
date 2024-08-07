@@ -50,6 +50,6 @@
         </record>
 
         <menuitem name="Beneficiary segments" id="menu_action_beneficiary_segments" parent="menu_action_digital_kit" action="action_beneficiary_segments"/>
-
+        <menuitem name="Segmentos beneficiarios" id="menu_action_beneficiary_segmentsp" parent="kit-digital.menu_kd" action="action_beneficiary_segments"/>
   </data>
 </openerp>

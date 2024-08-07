@@ -56,6 +56,6 @@
         </record>
 
         <menuitem name="Categories solutions" id="menu_action_digital_categories_solution" parent="menu_action_digital_kit" action="action_digital_categories_solution"/>
-
+        <menuitem name="Categorias soluciones" id="menu_action_digital_categories_solutionp" parent="kit-digital.menu_kd" action="action_digital_categories_solution"/>
   </data>
 </openerp>

@@ -9,7 +9,7 @@ Developed for Infobit informática s.l.
 	"author" : "Infobit Informática",
 	"website" : "http://www.infobit.es",
 	"depends" : [ 
-		'base'
+		'base', 'account', 'sale'
 	], 
 	"category" : "Partner Modules",
 	"init_xml" : [],
@@ -25,8 +25,15 @@ Developed for Infobit informática s.l.
                 'views/partner_documents_digital_kit.xml',
                 'views/partner.xml',
                 'wizard/wizard_create_order_from_kit.xml',
+                'views/kit_line.xml',
+                'views/invoice.xml',
+                'wizard/wizard_lock_kit_line.xml',
                 'data/category_solutions.xml',
                 'data/segments.xml',
+                'report/report_kit_line.xml',
+                'report/report_kit_line_internal.xml',
+                'report/report_kit_line_withoutamount.xml',
+                'report/reports.xml'
 	],
 	"installable": True
 }

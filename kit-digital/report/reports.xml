@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <report 
+            id="custom_report_kit_line"
+            model="kit.line"
+            string="Lineas trabajos kit digital"
+            report_type="qweb-pdf"
+            name="kit-digital.report_kit_line"
+            attachment_use="False"
+            file="kit-digital.report_kit_line"
+        />
+        <report 
+            id="custom_report_kit_line_withoutamount"
+            model="kit.line"
+            string="Lineas trabajos kit digital Qty"
+            report_type="qweb-pdf"
+            name="kit-digital.report_kit_line_withoutamount"
+            attachment_use="False"
+            file="kit-digital.report_kit_line_withoutamount"
+        />
+
+        <report 
+            id="custom_report_kit_line_internal"
+            model="kit.line"
+            string="Lineas trabajos internos kit digital"
+            report_type="qweb-pdf"
+            name="kit-digital.report_kit_line_internal"
+            attachment_use="False"
+            file="kit-digital.report_kit_line_internal"
+        />
+
+    </data>
+</openerp>

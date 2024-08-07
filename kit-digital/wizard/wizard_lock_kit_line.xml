@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+    <data>
+        <record id="view_wizard_lock_kit_line" model="ir.ui.view">
+            <field name="name">Liquidar lineas</field>
+            <field name="model">wizard.lock.kit.line</field>
+            <field name="arch" type="xml">
+                <form string="Liquidar">
+                    <footer>
+                        <button name="lock" string="Liquidar" type="object" class="oe_highlight"/>
+                        or
+                        <button string="Cancelar" class="oe_link" special="cancel" />
+                    </footer>
+                </form>
+            </field>
+        </record>
+
+        <act_window name="Liquidar"
+          res_model="wizard.lock.kit.line"
+          src_model="kit.line"
+          view_mode="form"
+          target="new"
+          key2="client_action_multi"
+          id="wizard_lock_kit_line_act_window"/>
+    </data>
+</openerp>

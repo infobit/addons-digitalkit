@@ -7,6 +7,7 @@
             <field name="type">tree</field>
             <field name="arch" type="xml">
                <tree string="Empresas con kit digital">
+                    <field name="code_bono"/>
                     <field name="name"/>
                     <field name="beneficiary_segment"/>
                     <field name="state_kit"/>
@@ -37,6 +38,7 @@
                 <xpath expr="//notebook" position="inside">
                    <page string="Digital kit">
                       <group>
+                       <field name="code_bono"/>
                        <field name="beneficiary_segment"/>
                        <!--<field name="grant_awarded" string="Expediente"/>-->
                        <field name="state_kit"/>
@@ -62,6 +64,9 @@
                               <field name="state_justify"/>
                               <field name="date_inijustify"/>
                               <field name="date_endjustify"/>
+                              <field name="state_justify2"/>
+                              <field name="date_inijustify2"/>
+                              <field name="date_endjustify2"/>
                               <field name="note"/>
                               <field name="documents_kit_ids"/>
                           </tree>
@@ -85,6 +90,9 @@
                               <field name="state_justify"/>
                               <field name="date_inijustify"/>
                               <field name="date_endjustify"/>
+                              <field name="state_justify2"/>
+                              <field name="date_inijustify2"/>
+                              <field name="date_endjustify2"/>
                               <field name="note"/>
                               <field name="documents_kit_ids">
                                  <tree readonly="True">
@@ -119,6 +127,38 @@
                              </group>
                           </form>
                        </field>
+                       <field name="kit_lines">
+                         <tree editable="top">
+                              <field name="date"/>
+                              <field name="user_id"/>
+                              <field name="name"/>
+                              <field name="description"/>
+                              <field name="product_id"/>
+                              <field name="partner_id" invisible="1"/>
+                              <field name="working_hours"/>
+                              <field name="qty_invoice"/>
+                              <field name="price"/>
+                              <field name="discount"/>
+                              <field name="amount"/>
+                              <field name="lock"/>
+                          </tree>
+                          <form>
+                             <group>
+                              <field name="date"/>
+                              <field name="user_id"/>
+                              <field name="name"/>
+                              <field name="description"/>
+                              <field name="product_id"/>
+                              <field name="partner_id" invisible="1"/>
+                              <field name="working_hours"/>
+                              <field name="qty_invoice"/>
+                              <field name="price"/>
+                              <field name="discount"/>
+                              <field name="amount"/>
+                              <field name="lock"/>
+                             </group>
+                          </form>
+                       </field>
                       </group> 
                       <group>
                          <field name="internal_note_kit"/>
@@ -138,6 +178,7 @@
                  <field name="acept_date"/>
                  <field name="date_end"/>
                  <field name="state_kit"/>
+                 <field name="code_bono"/>
                 </field>
                 <filter name="salesperson" position="after">
                    <filter name="acept_date" string="Fecha Aceptación" context="{'group_by': 'acept_date'}"/>

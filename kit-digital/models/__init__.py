@@ -7,4 +7,5 @@ from . import beneficiary_segments
 from . import partner_documents_digital_kit
 from . import partner_digital_categories_solution
 from . import partner
-
+from . import kit_line
+from . import invoice

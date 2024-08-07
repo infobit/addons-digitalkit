@@ -47,6 +47,7 @@
         </record>
 
         <menuitem name="Type document digital kit" id="menu_action_type_document_digital_kit" parent="menu_action_digital_kit" action="action_type_document_digital_kit"/>
+        <menuitem name="Tipos documentos" id="menu_action_type_document_digital_kitp" parent="kit-digital.menu_kd" action="action_type_document_digital_kit"/>
 
   </data>
 </openerp>
